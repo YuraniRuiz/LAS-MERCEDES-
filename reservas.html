@@ -83,7 +83,7 @@
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="image10.jpg" alt="Logo" width="150px">
+                <img src="../Proyecto iglesia/imagenes/image10.jpg" alt="Logo" width="150px">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
                 <span class="navbar-toggler-icon"></span>
@@ -106,40 +106,56 @@
     </nav>
 
     <!-- Formulario de reservas -->
-    <div class="container">
-        <h2>Centro de Convenciones "LAS MERCEDES"</h2>
-        <p>Para sus Encuentros, Convivencias, Seminarios, Retiros y más...</p>
-        <h3>Formulario de Reserva</h3>
-        <form id="reservation-form" action="https://formspree.io/f/myzyeeaa" method="POST">
-            <div class="mb-3">
-                <label for="fecha_reserva" class="form-label">Fecha de la Reserva</label>
-                <input type="date" class="form-control" id="fecha_reserva" name="fecha_reserva" required>
-            </div>
-            <div class="mb-3">
-                <label for="institucion" class="form-label">Institución o Persona Natural</label>
-                <input type="text" class="form-control" id="institucion" name="institucion" required>
-            </div>
-            <div class="mb-3">
-                <label for="documento" class="form-label">Anexar Documento (RUT o Cédula)</label>
-                <input type="file" class="form-control" id="documento" name="documento" required>
-            </div>
-            <div class="mb-3">
-                <label for="direccion" class="form-label">Dirección</label>
-                <input type="text" class="form-control" id="direccion" name="direccion" required>
-            </div>
-            <div class="mb-3">
-                <label for="nombre" class="form-label">Nombre Solicitante</label>
-                <input type="text" class="form-control" id="nombre" name="nombre" required>
-            </div>
-            <div class="mb-3">
-                <label for="telefono" class="form-label">Teléfono de Contacto</label>
-                <input type="tel" class="form-control" id="telefono" name="telefono" required>
-            </div>
-            <div class="mb-3">
-                <label for="correo" class="form-label">Correo Electrónico</label>
-                <input type="email" class="form-control" id="correo" name="correo" required>
-            </div>
-            
+            <div class="container">
+                <h2>Centro de Convenciones "LAS MERCEDES"</h2>
+                <p>Para sus Encuentros, Convivencias, Seminarios, Retiros y más...</p>
+                <h3>Formulario de Reserva</h3>
+                <form id="reservation-form" action="https://formspree.io/f/myzyeeaa" method="POST">
+                    <div class="mb-3">
+                        <label for="fecha_reserva" class="form-label">Fecha de la Reserva</label>
+                        <input type="date" class="form-control" id="fecha_reserva" name="fecha_reserva" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="dia_llegada" class="form-label">Día de Llegada</label>
+                        <input type="date" class="form-control" id="dia_llegada" name="dia_llegada" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="hora_llegada" class="form-label">Hora de Llegada</label>
+                        <input type="time" class="form-control" id="hora_llegada" name="hora_llegada" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="tipo_encuentro" class="form-label">Tipo de Encuentro</label>
+                        <select class="form-control" id="tipo_encuentro" name="tipo_encuentro" required>
+                            <option value="retiro">Retiro</option>
+                            <option value="taller">Taller</option>
+                            <option value="seminario">Seminario</option>
+                            <option value="seminario">Otro</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="institucion" class="form-label">Institución o Persona Natural</label>
+                        <input type="text" class="form-control" id="institucion" name="institucion" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="documento" class="form-label">Anexar Documento (RUT o Cédula)</label>
+                        <input type="file" class="form-control" id="documento" name="documento" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="direccion" class="form-label">Dirección</label>
+                        <input type="text" class="form-control" id="direccion" name="direccion" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre Solicitante</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="telefono" class="form-label">Teléfono de Contacto</label>
+                        <input type="tel" class="form-control" id="telefono" name="telefono" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="correo" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="correo" name="correo" required>
+                    </div>
             <h4>Servicios</h4>
             <div class="mb-3">
                 <label class="form-label">Escriba cantidad de servicios que desea de cada uno:</label>
